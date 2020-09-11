@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith & Nephew</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+</head>
+
+<body ng-app="newRocketMockUp">
+
+    <!-- Main Nav -->
+    <header ng-controller="navbarController">
+        <div main-navbar></div>
+    </header>
+
+    <!-- Sub Nav -->
+    <nav class="sub-nav-section">
+
+        <!-- Sub Nav - Background IMG -->
+        <img class="sub-nav-section-img" src="./assets/images/background.jpg" alt="smiling-woman" width="100%">
+
+        <!-- Sub Nav - Nav Bar -->
+        <div class="sub-nav hidden-sm hidden-xs">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#">I Have a Request</a></li>
+                <li><a href="#">I Have a Question</a></li>
+                <li><a href="#">I Have an Issue</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Sub Nav - Search -->
+        <div class="search-input">
+            <h1>Welcome to<br> <strong>Global Business Services</strong> </h1>
+            <div class="search">
+                <input type="search" class="form-control search-bar" id="search" placeholder="Search">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Main Content  -->
+    <main class="wrapper container-fluid">
+        <div class="row">
+
+            <!-- Main Content - Left Side -->
+            <section class="col-lg-9 col-sm-12">
+
+                <!-- Action Buttons Section -->
+                <nav class="action-buttons-section row">
+
+                    <!-- Action Buttons Section - IT Services Button -->
+                    <div class="col-md-4">
+                        <button class="action-button">
+                            <div class="row">
+
+                                <figure class="col-md-3">
+                                    <img src="./assets/images/it.png" height="40" alt="IT Services">
+                                </figure>
+
+                                <figcaption class="col-md-9">
+                                    <h5>IT Services</h5>
+                                </figcaption>
+
+                            </div>
+
+                            <h6>Purchase IT products, or get IT support</h6>
+                        </button>
+                    </div>
+
+                    <!-- Action Buttons Section - PR Services Button -->
+                    <div class="col-md-4">
+
+                        <button class="action-button">
+                            <div class="row">
+
+                                <figure class="col-md-3">
+                                    <img src="./assets/images/pr.png" height="40" alt="PR Services">
+                                </figure>
+
+                                <figcaption class="col-md-9">
+                                    <h5>Procurement Services</h5>
+                                </figcaption>
+
+                            </div>
+
+                            <h6>Request Procurement support</h6>
+                        </button>
+                    </div>
+
+                    <!-- Action Buttons Section - HR Services Button -->
+                    <div class="col-md-4">
+
+                        <button class="action-button">
+                            <div class="row">
+
+                                <figure class="col-md-3">
+                                    <img src="./assets/images/hr.png" height="40" alt="HR Services">
+                                </figure>
+
+                                <figcaption class="col-md-9">
+                                    <h5>HR Services</h5>
+                                </figcaption>
+
+                            </div>
+
+                            <h6>Request HR support</h6>
+                        </button>
+
+                    </div>
+
+                </nav>
+
+                <!-- Latest News Section -->
+                <article class="latest-news-section row">
+                    <div class="col-md-12">
+
+                        <!-- Latest News Section - Content -->
+                        <news-list></news-list>
+
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Main Content - Right Side -->
+            <aside class="col-lg-3 col-sm-12">
+
+                <!-- Tickets Section -->
+                <article class="tickets-section row">
+                    <div class="col-md-12">
+
+                        <!-- Ticket Section - Content -->
+                        <ticket-list></ticket-list>
+
+                    </div>
+                </article>
+
+                <!-- Help Section -->
+                <article class="help-section row">
+                    <div class="col-md-12">
+
+                        <!-- Help Section - Content -->
+                        <help-list></help-list>
+
+                    </div>
+                </article>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c85bcb6cfd.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- BootStrap 3 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Angular CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+
+    <!-- Custom Angular Components -->
+    <script src="./assets/js/index.js"></script>
+
+    <script src="./assets/js/components/navbar/navbar.component.js"></script>
+
+    <script src="./assets/js/components/news/news.component.js"></script>
+    <script src="./assets/js/components/news/article.component.js"></script>
+
+    <script src="./assets/js/components/tickets/tickets.component.js"></script>
+    <script src="./assets/js/components/tickets/ticket.component.js"></script>
+
+    <script src="./assets/js/components/help/help.component.js"></script>
+    <script src="./assets/js/components/help/department.component.js"></script>
+
+    <script src="./assets/js/components/title/title.component.js"></script>
+
+</body>
+</html>
